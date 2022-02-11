@@ -1,0 +1,16 @@
+{
+  "name": "client-builder-docs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/clientbuilder/docs.git",
+  "author": "Georgi Karagogov",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vitepress dev src",
+    "build": "vitepress build src",
+    "serve": "vitepress serve src"
+  },
+  "devDependencies": {
+    "vitepress": "^0.21.6"
+  }
+}

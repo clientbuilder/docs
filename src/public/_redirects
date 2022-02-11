@@ -1,0 +1,2 @@
+https://docs.clientbuilder.netlify.app/* https://docs.clientbuilder.dev/:splat 301!
+/github https://github.com/clientbuilder/clientbuilder 301!
