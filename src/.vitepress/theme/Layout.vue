@@ -8,6 +8,7 @@ import NavBar from './components/NavBar.vue'
 import SideBar from 'vitepress/dist/client/theme-default/components/SideBar.vue'
 import Page from 'vitepress/dist/client/theme-default/components/Page.vue'
 import AlgoliaSearchBox from 'vitepress/dist/client/theme-default/components/AlgoliaSearchBox.vue';
+import MainFooter from "./components/MainFooter.vue";
 
 // generic state
 const route = useRoute()
@@ -83,69 +84,20 @@ const pageClasses = computed(() => {
     <!-- TODO: make this button accessible -->
     <div class="sidebar-mask" @click="toggleSidebar(false)" />
 
-    <Content v-if="isCustomLayout" />
-
-    <template v-else-if="enableHome">
-      <!-- A slot for customizing the entire homepage easily -->
-      <slot name="home">
-        <Home>
-          <template #hero>
-            <slot name="home-hero" />
-          </template>
-          <template #features>
-            <slot name="home-features" />
-          </template>
-          <template #footer>
-            <slot name="home-footer" />
-          </template>
-        </Home>
-      </slot>
-    </template>
-
-    <Page v-else>
+    <Page>
       <template #top>
-        <slot name="page-top-ads">
-          <div id="ads-container" v-if="theme.carbonAds && theme.carbonAds.carbon">
-          </div>
-        </slot>
         <slot name="page-top" />
       </template>
       <template #bottom>
         <slot name="page-bottom" />
-        <slot name="page-bottom-ads">
-        </slot>
+        <MainFooter/>
       </template>
     </Page>
+
   </div>
 
   <Debug />
 </template>
 
 <style>
-#ads-container {
-  margin: 0 auto;
-}
-@media (min-width: 420px) {
-  #ads-container {
-    position: relative;
-    right: 0;
-    float: right;
-    margin: -8px -8px 24px 24px;
-    width: 146px;
-  }
-}
-@media (max-width: 420px) {
-  #ads-container {
-    /* Avoid layout shift */
-    height: 105px;
-    margin: 1.75rem 0;
-  }
-}
-@media (min-width: 1400px) {
-  #ads-container {
-    position: fixed;
-    right: 8px;
-    bottom: 8px;
-  }
-}
 </style>
