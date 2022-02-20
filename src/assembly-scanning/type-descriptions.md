@@ -1,4 +1,4 @@
-# What is Client Builder?
+# Type Descriptions
 
 ::: warning UNDER CONSTRUCTION
 The current page will be available soon!

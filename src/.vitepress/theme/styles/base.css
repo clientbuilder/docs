@@ -1,0 +1,66 @@
+::selection {
+    background: var(--c-brand);
+    color: var(--c-brand-light);
+}
+
+::-moz-selection {
+    background: var(--c-brand);
+    color: var(--c-brand-light);
+}
+
+*:-moz-full-screen,
+*:-webkit-full-screen,
+*:fullscreen *:-ms-fullscreen {
+    overflow: auto !important;
+}
+
+*:focus-visible {
+    outline: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b {
+    font-weight: bold;
+}
+
+.sidebar {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.nav-link .item.isExternal {
+    font-weight: bold;
+    color: var(--c-brand-addon-light);
+    border-bottom: none !important;
+}
+
+.nav-link .item.isExternal:hover,
+.nav-link .item.isExternal:active,
+.nav-link .item.isExternal:focus {
+    color: var(--c-brand);
+}
+
+li.sidebar-link > p.sidebar-link-item {
+    font-size: 1rem !important;
+}
+
+a.sidebar-link-item {
+    font-weight: 500 !important;
+    font-size: .9rem !important;
+}
+
+a.sidebar-link-item.active {
+    background: var(--c-brand);
+    color: white;
+    border-radius: var(--c-border-radius-default);
+}
+
+.page > .container {
+    max-width: calc(100% - 3rem) !important;
+}
