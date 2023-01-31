@@ -15,7 +15,7 @@ const { site, theme, localePath } = useData()
         :src="withBase(theme.logo)"
         alt="Client Builder"
     />
-    Docs
+    Client Builder
   </a>
 </template>
 
