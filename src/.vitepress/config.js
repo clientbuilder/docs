@@ -16,10 +16,6 @@ module.exports = {
         repo: 'clientbuilder/clientbuilder',
         nav: [
             {
-                text: 'Client Builder',
-                link: 'https://clientbuilder.dev/'
-            },
-            {
                 text: 'NuGet',
                 link: 'https://www.nuget.org/packages/ClientBuilder/'
             }
