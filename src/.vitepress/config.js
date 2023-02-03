@@ -42,7 +42,7 @@ module.exports = {
             {
                 text: 'Assembly Scanning',
                 children: [
-                    { text: 'Ways To Implement', link: '/assembly-scanning/ways-to-implement' },
+                    { text: 'Introduction', link: '/assembly-scanning/introduction' },
                     { text: 'Built-in Tools', link: '/assembly-scanning/built-in-tools' },
                     { text: 'Type Descriptions', link: '/assembly-scanning/type-descriptions' }
                 ]
